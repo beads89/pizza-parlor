@@ -34,5 +34,9 @@ Code: finishedPizza.completeLarge();
 Expected output: Large Pepperoni Mushroom
 
 
+Test: It should display an extra large pizza
+Code. let completeXL = new Pizza("Extra Large");
+Expected output: Extra Large
+
 
 

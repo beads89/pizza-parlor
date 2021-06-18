@@ -5,11 +5,27 @@ function Pizza(pizzaSize1, pizzaSize2, pizzaTopping1, pizzaTopping2) {
   this.pizzaSize2 = pizzaSize2;
   this.pizzaTopping1 = pizzaTopping1;
   this.pizzaTopping2 = pizzaTopping2;
+  
 }
 
+let pizzaSize1 = new Pizza('Large');
+let pizzaSize2 = new Pizza('Extra Large');
+let pizzaTopping1 = new Pizza('Pepperoni');
+let pizzaTopping2 = new Pizza('Mushroom');
 
-let finishedPizza = new Pizza("Large", "Extra Large", "Pepperoni", "Mushroom");
+let completeLarge = new Pizza("Large");
+let completeLargeP = new Pizza("Large", "Pepperoni");
+let completeLargeM = new Pizza("Large", "Mushroom");
+let completeLarge2 = new Pizza("Large", "Pepperoni", "Mushroom");
 
+let completeXL = new Pizza("Extra Large");
+let completeXLP = new Pizza("Extra Large", "Pepperoni");
+let completeXLM = new Pizza("Extra Large", "Mushroom");
+let completeXL2 = new Pizza("Extra Large", "Pepperoni", "Mushroom");
+
+
+
+/*
 Pizza.prototype.completeLarge = function() {
   return this.pizzaSize1; 
 };
@@ -45,10 +61,8 @@ Pizza.prototype.completeXL2 = function() {
 
 
 
-let pizzaSize1 = { name: "Large", price: 15.00};
-let pizzaSize2 = { name: "Extra Large", price: 20.00};
-let pizzaTopping1 = { name: "Pepperoni", price: 3.00 };
-let pizzaTopping2 = { Name: "Mushroom", price: 3.00};
 
 
 
+
+*/
