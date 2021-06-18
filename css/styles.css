@@ -17,3 +17,11 @@
   margin-right: auto;
   width: 50%;
 }
+
+.left {
+  flex: left;
+}
+
+.right {
+  flex: right;
+}
