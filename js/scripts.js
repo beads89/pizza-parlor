@@ -7,6 +7,10 @@ function Pizza(pizzaSize1, pizzaSize2, pizzaTopping1, pizzaTopping2) {
 
 let finishedPizza = new Pizza("Large", "Extra Large", "Pepperoni", "Mushroom");
 
+Pizza.prototype.completeLarge = function() {
+  return this.pizzaSize1; 
+};
+
 Pizza.prototype.completeLargeP = function() {
   return this.pizzaSize1 + " " + this.pizzaTopping1; 
 };
@@ -15,8 +19,25 @@ Pizza.prototype.completeLargeM = function() {
   return this.pizzaSize1 + " " + this.pizzaTopping2; 
 };
 
+
 Pizza.prototype.completeLarge2 = function() {
   return this.pizzaSize1 + " " + this.pizzaTopping1 + " " + this.pizzaTopping2; 
+};
+
+Pizza.prototype.completeXL = function() {
+  return this.pizzaSize2; 
+};
+
+Pizza.prototype.completeXLP = function() {
+  return this.pizzaSize2 + " " + this.pizzaTopping1; 
+};
+
+Pizza.prototype.completeXLM = function() {
+  return this.pizzaSize2 + " " + this.pizzaTopping2; 
+};
+
+Pizza.prototype.completeXL2 = function() {
+  return this.pizzaSize2 + " " + this.pizzaTopping1 + " " + this.pizzaTopping2; 
 };
 
 console.log(finishedPizza.pizzaTopping2);
