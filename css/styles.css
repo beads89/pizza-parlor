@@ -1,0 +1,19 @@
+.centertext {
+  text-align: center;
+}
+
+.topborder {
+  width: 100%;
+  border-spacing: 10px;
+  border-bottom-width: 5px;
+  border-bottom: solid red;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.centerpic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
