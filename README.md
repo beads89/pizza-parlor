@@ -29,6 +29,11 @@ Test: It should log "Extra Large" in the console
 Code: console.log(finishedPizza.pizzaSize2)
 Expected output: Extra Large
 
+Describe: Pizza.prototype.completeLarge = function() {
+Test: It should display a large pizza with both ingredients
+Code: finishedPizza.completeLarge();
+Expected output: Large Pepperoni Bullets
+
 
 
 
