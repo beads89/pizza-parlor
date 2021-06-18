@@ -5,12 +5,27 @@ function Pizza(pizzaSize1, pizzaSize2, pizzaTopping1, pizzaTopping2) {
   this.pizzaTopping2 = pizzaTopping2;
 }
 
-let finishedPizza = new Pizza("Large", "Extra Large", "Pepperoni", "Bullets");
+let finishedPizza = new Pizza("Large", "Extra Large", "Pepperoni", "Mushroom");
 
-Pizza.prototype.completeLarge = function() {
+Pizza.prototype.completeLargeP = function() {
+  return this.pizzaSize1 + " " + this.pizzaTopping1; 
+};
+
+Pizza.prototype.completeLargeM = function() {
+  return this.pizzaSize1 + " " + this.pizzaTopping2; 
+};
+
+Pizza.prototype.completeLarge2 = function() {
   return this.pizzaSize1 + " " + this.pizzaTopping1 + " " + this.pizzaTopping2; 
 };
 
 console.log(finishedPizza.pizzaTopping2);
+
+
+let pizzaSize1 = { name: "Large", price: 15.00};
+let pizzaSize2 = { name: "Extra Large", price: 20.00};
+let pizzaTopping1 = { name: "Pepperoni", price: 3.00 };
+let pizzaTopping2 = { Name: "Mushroom", price: 3.00};
+
 
 

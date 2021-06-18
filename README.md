@@ -11,15 +11,14 @@ Prices
     Base Large - $15
     Base Extra Large - $20
 
-    Large 2 topping - $20
-    Extra Large 2 topping - $25
-
   Toppings
     Pepperoni - $3
     Bullets - $3
 
 
 Constructor has properties for toppings/size
+
+Use a method to return cost and type of pizza chosen
 
 
 ** Tests **
@@ -32,7 +31,7 @@ Expected output: Extra Large
 Describe: Pizza.prototype.completeLarge = function() {
 Test: It should display a large pizza with both ingredients
 Code: finishedPizza.completeLarge();
-Expected output: Large Pepperoni Bullets
+Expected output: Large Pepperoni Mushroom
 
 
 
