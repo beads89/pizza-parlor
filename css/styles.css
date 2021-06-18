@@ -25,3 +25,18 @@
 .right {
   flex: right;
 }
+
+.selectsize {
+  width: 200px;
+}
+
+.buttonsize {
+  border-spacing: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: block;
+}
+
+body {
+  background-image: url(/img/background-pizza.jpg);
+}
