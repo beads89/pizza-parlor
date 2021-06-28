@@ -29,9 +29,9 @@ Code: let testingPizza = new Pizza("large", "mushroom");
 Expected output: Pizza {pizzaSize: "large", pizzaTopping: "mushroom"}
 
 Describe: Pizza.prototype.size
-Test: It should calculate size and cost depending on user input
-Code: finishedPizza.completeLarge();
-Expected output: Large Pepperoni Mushroom
+Test: It should calculate size and cost depending on user input with submit button
+Code: Pizza.size;
+Expected output: Large pizza showing $15 or Extra Large showing $20
 
 
 Test: It should display an extra large pizza
