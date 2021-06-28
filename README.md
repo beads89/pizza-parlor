@@ -24,12 +24,12 @@ Use a method to return cost and type of pizza chosen
 ** Tests **
 
 Describe: Pizza();
-Test: It should create a pizza with undefined values since no size or toppings are applied yet
-Code: let testPizza = new Pizza();
-Expected output: Create a pizza with a size and toppings
+Test: It should create a pizza with size, toppings and price based on user input
+Code: let testingPizza = new Pizza("large", "mushroom");
+Expected output: Pizza {pizzaSize: "large", pizzaTopping: "mushroom"}
 
-Describe: Pizza.prototype.completeLarge = function() {
-Test: It should display a large pizza with both ingredients
+Describe: Pizza.prototype.size
+Test: It should calculate size and cost depending on user input
 Code: finishedPizza.completeLarge();
 Expected output: Large Pepperoni Mushroom
 
