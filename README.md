@@ -14,7 +14,7 @@
 
 ## Description
 
-_This application allows a user to select between different sizes and toppings for a pizza, then displays the pizza the user created along with a cost._
+_This application allows a user to select between different sizes and toppings for a pizza. It then lists the ingredients and size the user input for their pizza and calculates the asssociated cost._
 
 ## Setup/Installation Requirements
 

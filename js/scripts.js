@@ -42,9 +42,6 @@ $(document).ready(function() {
     $(".ordered").show();
     $("#sizeInput").text(output.pizzaSize);
     $("#pizzaCost").text("$" + output.pizzaPrice);
-
-
   });
 })
 
-//     $("#pizzaToppings").text(output.pizzaTopping);

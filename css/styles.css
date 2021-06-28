@@ -7,7 +7,7 @@
   border-spacing: 10px;
   border-bottom-width: 5px;
   border-bottom: solid red;
-  background-color: white;
+  background-color: rosybrown;
   box-sizing: border-box;
 }
 
@@ -41,6 +41,6 @@
   display: none;
 }
 
-/* html, body {
-  background-image: url(/img/background-pizza.jpg);
-} */
+body {
+  background-color: rosybrown;
+}
