@@ -37,7 +37,9 @@
   display: block;
 }
 
-
+.ordered {
+  display: none;
+}
 
 /* html, body {
   background-image: url(/img/background-pizza.jpg);

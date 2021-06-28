@@ -19,10 +19,18 @@
     <form id="pizzaOrder">
       <div class="left">
         <p>We only carry the best sizes, so there's no wrong choice here!</p>
-        <select class="selectsize" id="sizes">
-          <option value="large">$15 - Large</option>
-          <option value="extra large">$20 - Extra Large</option>
-        </select>
+        <div class="radio">
+          <label>
+            <input type="radio" name = "sizes" value="large">
+            $15 - Large
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name = "sizes" value="extra large">
+            $20 - Extra Large
+          </label>
+        </div>
       </div>
       <div class="right">
         <p>Spice up your pizza for $3 per topping! (note: no actual spicy toppings)</p>
@@ -43,8 +51,8 @@
     </form>
     <div class="ordered">
       <h6>Lookin' good!</h6>
-      <p>You got a <span id="sizeInput"></span> pizza.</p>
-      <p>Toppings include: <span id="pizzaToppings"></span></p>
+      <p>You got one <span id="sizeInput"></span> pizza.</p>
+      <p>Toppings include: <span id="pizzaToppings"></span>.</p>
       <p>Your total comes out to: <span id="pizzaCost"></span>.</p>
     </div>
   </div>

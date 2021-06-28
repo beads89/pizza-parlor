@@ -15,7 +15,7 @@ Pizza.prototype.size = function(pizzaSize) {
 }
 
 Pizza.prototype.topping = function(pizzaTopping) {
-  for (let i = 0; i <= this.topping.length; i++) {
+  for (let i = 0; i < this.pizzaTopping.length; i++) {
     this.pizzaPrice += 3;
   }
 };
@@ -25,7 +25,7 @@ Pizza.prototype.topping = function(pizzaTopping) {
 $(document).ready(function() {
   $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
-    let sizeInput = $("#sizes").val();
+    let sizeInput = $("input:radio[name=sizes]:checked").val();
     let toppingInput = $("#toppings:checked");
     let toppingOutput = [];
     toppingInput.each(function() {
@@ -36,9 +36,15 @@ $(document).ready(function() {
     output.size();
     output.topping();
 
+    let toppingSpaced = (output.pizzaTopping).join(", ");
+    $("#pizzaToppings").text(toppingSpaced);
+
     $(".ordered").show();
     $("#sizeInput").text(output.pizzaSize);
-    $("#pizzaToppings").text(output.pizzaTopping);
     $("#pizzaCost").text("$" + output.pizzaPrice);
+
+
   });
 })
+
+//     $("#pizzaToppings").text(output.pizzaTopping);
