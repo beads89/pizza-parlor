@@ -11,30 +11,37 @@
     <h3>The Very Pizza Pizza Shop!</h3>
   </div>
   <div class="centerpic">
-    <img src="img/terminator-pizza.PNG" alt="The Pizzanator">
   </div>
   <div class="container">
     <div class="centertext">
-      <h5>Build your pie from our exotic and rare ingredients as well as sizes only available here!</h5>
+      <h5>Build your pie from our exotic and rare ingredients, as well as sizes only available here!</h5>
     </div>
     <div class="left">
       <p>We only carry the best sizes, so there's no wrong choice here!</p>
       <select class="selectsize" id="sizes">
-        <option value="pizzaSize1">Large</option>
-        <option value="pizzaSize2">Extra Large</option>
+        <option value="pizzaSize1">$15 - Large</option>
+        <option value="pizzaSize2">$20 - Extra Large</option>
       </select>
     </div>
     <div class="right">
-      <p>Spice up your pizza! (note: no actual spicy toppings)</p>
-      <select class="selectsize" id="toppings1">
+      <p>Spice up your pizza for $3 per topping! (note: no actual spicy toppings)</p>
+      <div>
+        <input type="checkbox" name ="toppings" value="pepperoni1">
+        <label for="pepperoni1">Pepperoni</label>
+        <input type="checkbox" name="toppings" value="pepperoni2">
+        <label for="pepperoni2">More Pepperoni</label>
+      </div>
+      <div>
+        <input type="checkbox" name="toppings" value="mushroom1">
+        <label for="mushroom1">Mushroom</label>
+        <input type="checkbox" name="toppings" value="mushroom2">
+        <label for="mushroom2">More Mushroom</label>
+      </div>
+      <!-- <select class="selectsize" id="toppings2">
         <option value="pizzaTopping1">Pepperoni</option>
         <option value="pizzaTopping2">Mushroom</option>
-      </select>
-      <select class="selectsize" id="toppings2">
-        <option value="pizzaTopping1">Pepperoni</option>
-        <option value="pizzaTopping2">Mushroom</option>
-      </select>
+      </select> -->
     </div>
-    <button type="button" class="btn btn-secondary buttonsize">Submit</button>    
+    <button type="button" class="btn btn-secondary buttonsize">Submit</button>
   </div>
 </body>
