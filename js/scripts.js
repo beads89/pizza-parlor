@@ -22,6 +22,14 @@ Pizza.prototype.topping = function(pizzaTopping) {
 
 // UI Logic
 
+$(document).ready(function() {
+  $("#pizzaOrder").submit(function(event) {
+    event.preventDefault();
+    let size = $("#sizes").val();
+    let topping = $("#toppings:checked");
+    let output = Pizza(pizzaSize, pizzaTopping);
+      $("#pizzaComplete").text(output);
+  });
 
 
 // let orderedPizza = new Pizza("l")
