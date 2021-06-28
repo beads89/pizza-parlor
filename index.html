@@ -16,32 +16,36 @@
     <div class="centertext">
       <h5>Build your pie from our exotic and rare ingredients, as well as sizes only available here!</h5>
     </div>
-    <div class="left">
-      <p>We only carry the best sizes, so there's no wrong choice here!</p>
-      <select class="selectsize" id="sizes">
-        <option value="pizzaSize1">$15 - Large</option>
-        <option value="pizzaSize2">$20 - Extra Large</option>
-      </select>
-    </div>
-    <div class="right">
-      <p>Spice up your pizza for $3 per topping! (note: no actual spicy toppings)</p>
-      <div>
-        <input type="checkbox" id="toppings" value="pepperoni1">
-        <label for="pepperoni1">Pepperoni</label>
-        <input type="checkbox" id="toppings" value="pepperoni2">
-        <label for="pepperoni2">More Pepperoni</label>
+    <form id="pizzaOrder">
+      <div class="left">
+        <p>We only carry the best sizes, so there's no wrong choice here!</p>
+        <select class="selectsize" id="sizes">
+          <option value="large">$15 - Large</option>
+          <option value="extra large">$20 - Extra Large</option>
+        </select>
       </div>
-      <div>
-        <input type="checkbox" id="toppings" value="mushroom1">
-        <label for="mushroom1">Mushroom</label>
-        <input type="checkbox" id="toppings" value="mushroom2">
-        <label for="mushroom2">More Mushroom</label>
+      <div class="right">
+        <p>Spice up your pizza for $3 per topping! (note: no actual spicy toppings)</p>
+        <div>
+          <input type="checkbox" id="toppings" value="pepperoni">
+          <label for="pepperoni1">Pepperoni</label>
+          <input type="checkbox" id="toppings" value="pepperoni">
+          <label for="pepperoni2">More Pepperoni</label>
+        </div>
+        <div>
+          <input type="checkbox" id="toppings" value="mushroom">
+          <label for="mushroom1">Mushroom</label>
+          <input type="checkbox" id="toppings" value="mushroom">
+          <label for="mushroom2">More Mushroom</label>
+        </div>
       </div>
-    </div>
-    <button type="button" class="btn btn-secondary buttonsize">Submit</button>
-    <div id="pizzaOrder">
+      <button type="submit" class="btn btn-secondary buttonsize">Submit</button>
+    </form>
+    <div class="ordered">
       <h6>Lookin' good!</h6>
-      <p>Tonights dinner is <span id="pizzaComplete"></span></p>
+      <p>You got a <span id="sizeInput"></span> pizza.</p>
+      <p>Toppings include: <span id="pizzaToppings"></span></p>
+      <p>Your total comes out to: <span id="pizzaCost"></span>.</p>
     </div>
   </div>
 </body>
