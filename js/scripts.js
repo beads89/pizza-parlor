@@ -1,4 +1,4 @@
-
+// Business Logic
 
 function Pizza(pizzaSize, pizzaTopping) {
   this.pizzaSize = pizzaSize;
@@ -19,6 +19,9 @@ Pizza.prototype.topping = function(pizzaTopping) {
     this.pizzaPrice += 3;
   }
 };
+
+// UI Logic
+
 
 // let orderedPizza = new Pizza("l")
 

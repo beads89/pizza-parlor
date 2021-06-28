@@ -23,10 +23,10 @@ Use a method to return cost and type of pizza chosen
 
 ** Tests **
 
-Describe: function Pizza(pizzaSize1, pizzaSize2, pizzaTopping1, pizzaTopping2)
-Test: It should log "Extra Large" in the console
-Code: console.log(finishedPizza.pizzaSize2)
-Expected output: Extra Large
+Describe: Pizza();
+Test: It should create a pizza with undefined values since no size or toppings are applied yet
+Code: let testPizza = new Pizza();
+Expected output: Create a pizza with a size and toppings
 
 Describe: Pizza.prototype.completeLarge = function() {
 Test: It should display a large pizza with both ingredients
