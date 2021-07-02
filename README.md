@@ -71,9 +71,16 @@ Code: let newPizza = new Pizza("Large", ["Mushroom"]);
 Expected output: Pizza {pizzaSize: "Large", pizzaTopping: ["Mushroom"], pizzaPrice: 15}
 
 Describe: Pizza.prototype.topping
-Test: It should add toppings and add $3 to the price for each topping when user submits
-Code. Pizza.topping;
-Expected output: $3 per topping added to the cost of the pizza size.
+Test: Assuming the user has not refreshed the page after performing the previous test, it should add $3 per topping to the price when the user submits
+Code: newPizza.topping();
+      newPizza;
+Expected output: Pizza {pizzaSize: "Large", pizzaTopping: ["Mushroom"], pizzaPrice: 18}
+
+Test: Using the same described prototype, this test will output only the topping price.
+Code: let newPizza = new Pizza("Large", ["Mushroom"]);
+      newPizza.topping();
+      newPizza;
+Expected output: Pizza {pizzaSize: "Large", pizzaTopping: ["Mushrrom"], pizzaPrice: 3}
 
 
 
