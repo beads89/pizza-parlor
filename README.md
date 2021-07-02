@@ -63,12 +63,12 @@ Test: It should create a pizza with size, toppings and price based on user input
 Code: let newPizza = new Pizza("Large", ["Mushroom"]);
 Expected output: Pizza {pizzaSize: "Large", pizzaTopping: "Mushroom", pizzaPrice: 0}
 
-May also show up as: Pizza {pizzaSize: "Large", pizzaTopping: Array(1), pizzaPrice: 0}
-
 Describe: Pizza.prototype.size
 Test: It should calculate size and cost depending on user input with submit button
-Code: Pizza.size;
-Expected output: Large pizza showing $15 or Extra Large showing $20.
+Code: let newPizza = new Pizza("Large", ["Mushroom"]);
+      newPizza.size();
+      newPizza;
+Expected output: Pizza {pizzaSize: "Large", pizzaTopping: ["Mushroom"], pizzaPrice: 15}
 
 Describe: Pizza.prototype.topping
 Test: It should add toppings and add $3 to the price for each topping when user submits
