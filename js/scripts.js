@@ -7,7 +7,7 @@ function Pizza(pizzaSize, pizzaTopping) {
 }
 
 Pizza.prototype.size = function(pizzaSize) {
-  if (this.pizzaSize === "large") {
+  if (this.pizzaSize === "Large") {
     this.pizzaPrice += 15
   } else {
     this.pizzaPrice += 20
@@ -26,7 +26,7 @@ $(document).ready(function() {
   $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
     let sizeInput = $("input:radio[name=sizes]:checked").val();
-    let toppingInput = $("#toppings:checked");
+    let toppingInput = $(".toppings:checked");
     let toppingOutput = [];
     toppingInput.each(function() {
       toppingOutput.push($(this).val());

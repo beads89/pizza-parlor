@@ -21,13 +21,13 @@
         <p>We only carry the best sizes, so there's no wrong choice here!</p>
         <div class="radio">
           <label>
-            <input type="radio" name = "sizes" value="large" checked>
+            <input type="radio" name = "sizes" value="Large" checked>
             $15 - Large
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name = "sizes" value="extra large">
+            <input type="radio" name = "sizes" value="Extra Large">
             $20 - Extra Large
           </label>
         </div>
@@ -35,15 +35,15 @@
       <div class="right">
         <p>Spice up your pizza for $3 per topping! (note: no actual spicy toppings)</p>
         <div>
-          <input type="checkbox" id="toppings" value="pepperoni">
+          <input type="checkbox" class="toppings" value="Pepperoni">
           <label for="pepperoni1">Pepperoni</label>
-          <input type="checkbox" id="toppings" value="pepperoni">
+          <input type="checkbox" class="toppings" value="Pepperoni">
           <label for="pepperoni2">More Pepperoni</label>
         </div>
         <div>
-          <input type="checkbox" id="toppings" value="mushroom">
+          <input type="checkbox" class="toppings" value="Mushroom">
           <label for="mushroom1">Mushroom</label>
-          <input type="checkbox" id="toppings" value="mushroom">
+          <input type="checkbox" class="toppings" value="Mushroom">
           <label for="mushroom2">More Mushroom</label>
         </div>
       </div>
@@ -51,9 +51,9 @@
     </form>
     <div class="ordered">
       <h6>Lookin' good!</h6>
-      <p>You got one <span id="sizeInput"></span> pizza.</p>
-      <p>Toppings include: <span id="pizzaToppings"></span>.</p>
-      <p>Your total comes out to: <span id="pizzaCost"></span>.</p>
+      <p>The size of your pizza is: <span id="sizeInput"></span></p>
+      <p>Toppings include: <span id="pizzaToppings"></span></p>
+      <p>Your total comes out to: <span id="pizzaCost"></span></p>
     </div>
   </div>
 </body>
