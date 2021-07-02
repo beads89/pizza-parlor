@@ -58,10 +58,12 @@ _Brandon Eads - brandon181989@hotmail.com_
 
 ** Tests **
 
-Describe: Pizza();
+Describe: function Pizza();
 Test: It should create a pizza with size, toppings and price based on user input
-Code: let testingPizza = new Pizza("large", "mushroom");
-Expected output: Pizza {pizzaSize: "large", pizzaTopping: "mushroom"}
+Code: let newPizza = new Pizza("Large", ["Mushroom"]);
+Expected output: Pizza {pizzaSize: "Large", pizzaTopping: "Mushroom", pizzaPrice: 0}
+
+May also show up as: Pizza {pizzaSize: "Large", pizzaTopping: Array(1), pizzaPrice: 0}
 
 Describe: Pizza.prototype.size
 Test: It should calculate size and cost depending on user input with submit button
