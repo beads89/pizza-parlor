@@ -77,11 +77,11 @@ Code: newPizza.topping();
       newPizza;
 Expected output: Pizza {pizzaSize: "Large", pizzaTopping: ["Mushroom"], pizzaPrice: 18}
 
-Test: Using the same described prototype, this test will output only the topping price.
+Test: Using the same described prototype, this test will only output the topping price.
 Code: let newPizza = new Pizza("Large", ["Mushroom"]);
       newPizza.topping();
       newPizza;
-Expected output: Pizza {pizzaSize: "Large", pizzaTopping: ["Mushrrom"], pizzaPrice: 3}
+Expected output: Pizza {pizzaSize: "Large", pizzaTopping: ["Mushroom"], pizzaPrice: 3}
 
 
 
